@@ -6,3 +6,14 @@
 // 82 -> 10
 
 // 9012 -> 12
+
+Console.Write("Введите число N: ");
+string N = Console.ReadLine();
+int sum=0;
+for (int i = 0; i < N.Length; i++)
+{
+  int B = Convert.ToInt32(N[i].ToString());
+  
+    sum=sum+B;
+}
+Console.WriteLine($"Сумма цифр в числе: {N} = {sum}");
